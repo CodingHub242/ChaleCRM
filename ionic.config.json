@@ -1,0 +1,7 @@
+{
+  "name": "zoho-bigin-clone",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
