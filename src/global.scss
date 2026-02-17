@@ -35,3 +35,21 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+/* Fix layout issues */
+ion-app {
+  background: #f5f6f9;
+}
+
+/* Ensure router outlet takes full height */
+ion-router-outlet {
+  height: 100%;
+  display: block;
+}
+
+/* Fix any padding issues on ion-content in pages */
+ion-content {
+  --offset-top: 0 !important;
+  --offset-bottom: 0 !important;
+  overflow-y: scroll;
+}
