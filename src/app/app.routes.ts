@@ -58,7 +58,7 @@ export const routes: Routes = [
   {
     path: '',
     component: MainLayoutPage,
-    canActivate: [AuthGuard],
+    
     children: [
       {
         path: '',

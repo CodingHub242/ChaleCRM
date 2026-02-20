@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule, MenuController, NavController } from '@ionic/angular';
 import { Router, RouterModule } from '@angular/router';
+import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { AuthService } from '../../../core/services/auth.service';
 import { addIcons } from 'ionicons';
 import { briefcase,add, trash, create, mail, document, close, eye, download, checkmark, arrowBack, arrowUp, arrowDown, filter, cloudUpload, checkmarkCircle, layers, time, alertCircle, chevronBack, chevronForward, chevronDown, person, logOut, list, calendar, analytics, trendingUp, flag, folderOpen, ellipse, business, notificationsOutline, settingsOutline, cash, people, businessOutline, homeOutline, peopleOutline, trendingUpOutline, checkboxOutline, calendarOutline, cubeOutline, documentTextOutline, receiptOutline } from 'ionicons/icons';
@@ -10,7 +11,7 @@ import { briefcase,add, trash, create, mail, document, close, eye, download, che
 @Component({
   selector: 'app-main-layout',
   standalone: true,
-  imports: [CommonModule, FormsModule, IonicModule, RouterModule],
+  imports: [CommonModule,IonContent, IonHeader, IonTitle, IonToolbar, FormsModule, IonicModule, RouterModule],
   templateUrl: './main-layout.page.html',
   styleUrls: ['./main-layout.page.scss']
 })
